@@ -1,0 +1,19 @@
+{
+  "name": "libro-de-visitas",
+  "version": "1.0.0",
+  "description": "Aplicación web de libro de visitas con persistencia en archivos",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": ["express", "nodejs", "guestbook"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

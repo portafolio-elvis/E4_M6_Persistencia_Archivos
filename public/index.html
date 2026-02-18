@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libro de Visitas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      h2 {
+        color: #555;
+        margin-top: 20px;
+      }
+
+      form {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .mensaje {
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+      }
+
+      .usuario {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .texto {
+        margin-top: 5px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Libro de Visitas</h1>
+
+    <h2>Nuevo Mensaje</h2>
+    <form action="/nuevo-mensaje" method="POST">
+      <label for="usuario">Nombre:</label>
+      <input type="text" id="usuario" name="usuario" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Mensajes</h2>
+    <div id="mensajes-container"></div>
+  </body>
+</html>
